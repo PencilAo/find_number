@@ -12,22 +12,22 @@ void munb()
 void game()
 {
 	int guess = 0;
-	int num = rand() % 100 + 1;
+	int num = rand() % 100 + 1;    //è®¾ç½®ä½ è¦ç”Ÿæˆçš„æ•°çš„èŒƒå›´è¿™é‡Œæ˜¯1~100
 	while (1)
 	{
-		printf("²ÂÒ»¸öÊı");
+		printf("çŒœä¸€ä¸ªæ•°");
 		scanf("%d", &guess);
 		if (guess < num)
 		{
-			printf("²ÂĞ¡ÁË\n");
+			printf("çŒœå°äº†\n");
 		}
 		else if (guess > num)
 		{
-			printf("²Â´óÁË\n");
+			printf("çŒœå¤§äº†\n");
 		}	
 		else
 		{
-			printf("²Â¶ÔÁË\n");
+			printf("çŒœå¯¹äº†\n");
 			break;
 		}
 	}
@@ -35,10 +35,10 @@ void game()
 }
 int main()
 {
-	srand((unsigned int)time(NULL));
+	srand((unsigned int)time(NULL));   //äº§ç”Ÿä¸€ä¸ªéšæœºæ•°
 	int input = 0;
 	munb();
-	printf("ÇëÊäÈë");
+	printf("è¯·è¾“å…¥");
 	do
 	{
 		scanf("%d", &input);
@@ -48,7 +48,7 @@ int main()
 			game();
 			break;
 		case 0:
-			printf("½áÊø\n");
+			printf("ç»“æŸ\n");
 			break;
 		default:
 			printf("1/0\n");
